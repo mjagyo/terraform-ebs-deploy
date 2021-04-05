@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "example" {
-  bucket = "viseo-sample-bucket-tests"
+  bucket = "-demo11-sample-bucket-tests"
 
   versioning {
     enabled = true

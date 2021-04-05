@@ -54,6 +54,7 @@ resource "aws_db_instance" "rds-app" {
   vpc_security_group_ids = ["${aws_security_group.rds-app.id}"]
   storage_type         = "gp2"
   publicly_accessible  = true
+  skip_final_snapshot  = "true"
 
   backup_retention_period = 30
   tags = {
